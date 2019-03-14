@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-osisoft-web-api-dynamic",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A node module for connecting to OSIsoft Web API Server",
   "main": "osisoft-web-api-dynamic.js",
   "keywords": [
@@ -11,9 +11,9 @@
     "pi"
   ],
   "author": {
-    "name": "Michael Qiu",
-    "email": "mqiu@sensetecnic.com",
-    "company": "Sense Tecnic"
+    "name": "Anita Steele",
+    "email": "anita.steele@melbournewater.com.au",
+    "company": "Melbourne Water"
   },
   "repository": {
     "type": "git",

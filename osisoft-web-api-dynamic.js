@@ -199,15 +199,15 @@ module.exports = function (RED) {
             break;
 
           case "path":
-	      		if (config.piDB === null || config.piDB.length === 0) {
-							node.error(RED._('web-api.errors.path-element-missing')); 
-	      		} else {
-							node.piDB = config.piDB;
-							if (config.piTag === null || config.piTag.length === 0)	{
-								node.piTag = msg.piTag;
-							} else {
-								node.piTag = config.piTag;
-	      			}
+            if (config.piDB === null || config.piDB.length === 0) {
+                        node.error(RED._('web-api.errors.path-element-missing')); 
+            } else {
+                node.piDB = config.piDB;
+                if (config.piTag === null || config.piTag.length === 0)	{
+                    node.piTag = msg.piTag;
+                } else {
+                    node.piTag = config.piTag;
+            }
               var path = '\\\\' + node.piDB.concat("\\", node.piTag);
               var urlparam = encodeURIComponent(path);
 
