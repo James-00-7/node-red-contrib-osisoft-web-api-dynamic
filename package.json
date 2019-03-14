@@ -14,11 +14,7 @@
     "name": "Anita Steele",
     "email": "anita.steele@melbournewater.com.au",
     "company": "Melbourne Water"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anita82/node-red-contrib-osisoft-web-api-dynamic.git"
-  },
+  },  
   "node-red": {
     "nodes": {
       "web-api": "osisoft-web-api-dynamic.js"
