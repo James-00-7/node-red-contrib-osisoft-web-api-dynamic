@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-osisoft-web-api-dynamic",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "A node module for connecting to OSIsoft Web API Server",
   "main": "osisoft-web-api-dynamic.js",
   "keywords": [

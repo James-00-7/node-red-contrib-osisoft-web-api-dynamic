@@ -64,7 +64,7 @@ module.exports = function (RED) {
     };
   };
 
-  RED.nodes.registerType("web-api-client-dynamic", webAPIClientNode, {
+  RED.nodes.registerType("web-api-client", webAPIClientNode, {
     credentials:{
       username: {type:"text"},
       password: {type:"password"}
@@ -239,7 +239,7 @@ module.exports = function (RED) {
     });
   };
 
-  RED.nodes.registerType("web-api-write-dynamic", webApiWriteNode);
+  RED.nodes.registerType("web-api-write", webApiWriteNode);
 
   function webApiQueryNode(config) {
     RED.nodes.createNode(this, config);
@@ -391,5 +391,5 @@ module.exports = function (RED) {
     });
   };
 
-  RED.nodes.registerType("web-api-query-dynamic", webApiQueryNode);
+  RED.nodes.registerType("web-api-query", webApiQueryNode);
 };
