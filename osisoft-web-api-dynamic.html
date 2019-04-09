@@ -216,7 +216,7 @@
             <li><i>By Point Path:</i> Write to a point in Data Servers by referring to the path in the data servers.
               <ul>
                 <li>Pi Server: Enter the name of the Pi Server</li>
-                <li>Pi Tag: Enter the name of the Pi Element</li>
+                <li>Pi Tag: Enter the name of the Pi Element. If you leave the value empty it will write into the tag dynamically passed by msg.piTag</li>
               </ul>
             </li>
             <li><i>By Custom URL:</i> Write to an URL relative to the base Web API URL set in the configuration node.
@@ -229,7 +229,7 @@
 
 <script type="text/javascript">
   RED.nodes.registerType('web-api-query',{
-    category: 'OSIsoftDynamic1',
+    category: 'MW OSIsoft Dynamic',
     color: '#6aa9ed',
     defaults: {
       name: { value:""},
@@ -374,7 +374,7 @@
             <li><i>By Point Path:</i> Write to a point in Data Servers by referring to the path in the data servers.
               <ul>
                 <li>Pi Server: Enter the name of the Pi Server</li>
-                <li>Pi Tag: Enter the name of the Pi Element. If you leave the value empty it will write into the tag dynamically passed by msg.piTag</li>
+                <li>Pi Tag: Enter the name of the Pi Element.</li>
               </ul>
             </li>
             <li><i>By Custom URL:</i> Write to an URL relative to the base Web API URL set in the configuration node.
