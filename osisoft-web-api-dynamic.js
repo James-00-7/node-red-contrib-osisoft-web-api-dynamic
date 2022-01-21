@@ -1,4 +1,3 @@
-
 /**
  * Copyright 2013, 2017 IBM Corp.
  *
@@ -269,7 +268,11 @@ module.exports = function (RED) {
             if (node.webId === null || node.webId.length === 0) {
               node.error(RED._('web-api.errors.webid-missing'));
             } else {
-              node.webId = config.webId;
+              if (config.webId === null || config.webId.length === 0)	{
+                    node.webId = msg.webId;
+                } else {
+                    node.piTag = config.piTag;
+            }
               node.server.queryByWebId(node.server.httpProtocal, node.webId, node, node.dataType).then(function(result) {
                 node.send(result);
               }).catch(function(e){
@@ -283,7 +286,11 @@ module.exports = function (RED) {
               node.error(RED._('web-api.errors.path-element-missing'));
             } else {
               node.piDB = config.piDB;
-              node.piTag = config.piTag;
+              if (config.piTag === null || config.piTag.length === 0)	{
+                    node.piTag = msg.piTag;
+                } else {
+                    node.piTag = config.piTag;
+                }
               var path = '\\\\' + node.piDB.concat("\\", node.piTag);
               var urlparam = encodeURIComponent(path);
 
